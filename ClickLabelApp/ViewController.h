@@ -7,7 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ClickLabel.h"
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController <ClickLabelDelegate>
+
+@property (nonatomic, weak) IBOutlet UILabel *tapLabel;
+@property (nonatomic, weak) IBOutlet UILabel *tapPointLabel;
+
+@property (nonatomic, strong) ClickLabel *clickLabel;
+@property (nonatomic, assign) NSInteger numberOfTaps;
 
 @end

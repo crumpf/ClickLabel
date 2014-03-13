@@ -22,6 +22,7 @@
 		8C0367F818D11C970071AFFC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C0367D718D11C970071AFFC /* UIKit.framework */; };
 		8C03680018D11C970071AFFC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8C0367FE18D11C970071AFFC /* InfoPlist.strings */; };
 		8C03680218D11C970071AFFC /* ClickLabelAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C03680118D11C970071AFFC /* ClickLabelAppTests.m */; };
+		8C03680E18D11E970071AFFC /* ClickLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C03680D18D11E970071AFFC /* ClickLabel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,9 @@
 		8C0367FD18D11C970071AFFC /* ClickLabelAppTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ClickLabelAppTests-Info.plist"; sourceTree = "<group>"; };
 		8C0367FF18D11C970071AFFC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		8C03680118D11C970071AFFC /* ClickLabelAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ClickLabelAppTests.m; sourceTree = "<group>"; };
+		8C03680B18D11D220071AFFC /* ClickLabelDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ClickLabelDelegate.h; sourceTree = "<group>"; };
+		8C03680C18D11E970071AFFC /* ClickLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClickLabel.h; sourceTree = "<group>"; };
+		8C03680D18D11E970071AFFC /* ClickLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClickLabel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,12 +120,15 @@
 			children = (
 				8C0367E218D11C970071AFFC /* AppDelegate.h */,
 				8C0367E318D11C970071AFFC /* AppDelegate.m */,
-				8C0367E518D11C970071AFFC /* Main_iPhone.storyboard */,
+				8C03680C18D11E970071AFFC /* ClickLabel.h */,
+				8C03680D18D11E970071AFFC /* ClickLabel.m */,
+				8C03680B18D11D220071AFFC /* ClickLabelDelegate.h */,
+				8C0367EE18D11C970071AFFC /* Images.xcassets */,
 				8C0367E818D11C970071AFFC /* Main_iPad.storyboard */,
+				8C0367E518D11C970071AFFC /* Main_iPhone.storyboard */,
+				8C0367DA18D11C970071AFFC /* Supporting Files */,
 				8C0367EB18D11C970071AFFC /* ViewController.h */,
 				8C0367EC18D11C970071AFFC /* ViewController.m */,
-				8C0367EE18D11C970071AFFC /* Images.xcassets */,
-				8C0367DA18D11C970071AFFC /* Supporting Files */,
 			);
 			path = ClickLabelApp;
 			sourceTree = "<group>";
@@ -254,6 +261,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8C0367ED18D11C970071AFFC /* ViewController.m in Sources */,
+				8C03680E18D11E970071AFFC /* ClickLabel.m in Sources */,
 				8C0367E418D11C970071AFFC /* AppDelegate.m in Sources */,
 				8C0367E018D11C970071AFFC /* main.m in Sources */,
 			);
